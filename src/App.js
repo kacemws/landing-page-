@@ -1,23 +1,18 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./Style/App.scss";
+import Signin from "./Views/Signin";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/">
-            <div
-              style={{
-                height: "100vh",
-                width: "100%",
-                backgroundColor: "red",
-              }}
-            ></div>
+          <Route exact path="/">
+            <Signin />
           </Route>
           <Route path="/sign-up">
             <div
               style={{
-                height: "100vh",
+                height: "100%",
                 width: "100%",
                 backgroundColor: "blue",
               }}

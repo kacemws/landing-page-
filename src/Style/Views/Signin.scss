@@ -1,0 +1,279 @@
+@import "../variable.scss";
+@import "../breakpoints.scss";
+
+.sign-in {
+  height: 100%;
+  width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .left-part {
+      height: 100%;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .content {
+        height: 90%;
+      }
+    }
+    .right-part {
+      height: 100%;
+      width: 40%;
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+      //   background-color: rgb(213, 151, 151);
+      .right-part-inner {
+        height: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .logo {
+          width: 80px;
+          margin: 0 auto;
+          margin-bottom: 1.25rem;
+        }
+
+        .greetings {
+          margin-bottom: 1.25rem;
+
+          @include media("<=SMdesktop") {
+            margin-bottom: 0.825rem;
+          }
+
+          @include media("<=tablet") {
+            margin-bottom: 0.75rem;
+          }
+
+          @include media("<=605px") {
+            margin-bottom: 0.6rem;
+          }
+
+          @include media("<=phone") {
+            margin-bottom: 0.5rem;
+          }
+          h1 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 500;
+            margin: 0.25rem 0;
+            @include media("<=SMdesktop") {
+              margin: 0.2rem 0;
+            }
+
+            @include media("<=tablet") {
+              margin: 0.15rem 0;
+            }
+          }
+          h3 {
+            font-weight: 400;
+            margin: 0.15rem 0;
+            @include media("<=SMdesktop") {
+              margin: 0.125rem 0;
+            }
+
+            @include media("<=tablet") {
+              margin: 0.1rem 0;
+            }
+            .highlited {
+              color: $main;
+              font-weight: 500;
+              cursor: pointer;
+            }
+          }
+        }
+
+        form {
+          .input-container {
+            margin-bottom: 1.75rem; // tofix
+            @include media("<=SMdesktop") {
+              margin-bottom: 1.5rem; // tofix
+            }
+
+            @include media("<=tablet") {
+              margin-bottom: 1.35rem; // tofix
+            }
+
+            @include media("<=605px") {
+              margin-bottom: 1.25rem; // tofix
+            }
+
+            @include media("<=phone") {
+              margin-bottom: 1rem; // tofix
+            }
+            .label {
+              margin-bottom: 0.25rem;
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+              font-weight: 500;
+              font-family: $fonts;
+              display: flex;
+              justify-content: space-between;
+
+              @include media("<=SMdesktop") {
+                font-size: 1rem;
+              }
+
+              @include media("<=tablet") {
+                font-size: 1.25rem;
+              }
+
+              @include media("<=605px") {
+                font-size: 1rem;
+              }
+
+              @include media("<=phone") {
+                font-size: 1rem;
+              }
+
+              .forgot-password {
+                color: $main;
+                &:hover {
+                  cursor: pointer;
+                  color: $main-darker;
+                }
+              }
+            }
+
+            .input {
+              width: 100%;
+              padding: 0.75rem 0.5rem;
+              margin-top: 0.5rem;
+              outline: none;
+              border-radius: 0.25rem;
+              background-color: $light-background;
+
+              border: 2px solid rgba(36, 36, 36, 0.5);
+              &:focus {
+                background-color: $focus-background;
+              }
+
+              font-size: 1rem;
+
+              @include media("<=SMdesktop") {
+                font-size: 0.875rem;
+              }
+
+              @include media("<=tablet") {
+                font-size: 1rem;
+              }
+
+              @include media("<=605px") {
+                font-size: 0.875rem;
+              }
+
+              @include media("<=phone") {
+                font-size: 0.75rem;
+              }
+            }
+            .error {
+              color: red;
+              font-size: 0.75rem;
+              font-weight: 500;
+
+              @include media("<=SMdesktop") {
+                font-size: 0.575rem;
+              }
+
+              @include media("<=tablet") {
+                font-size: 0.75rem;
+              }
+
+              @include media("<=605px") {
+                font-size: 0.575rem;
+              }
+
+              @include media("<=phone") {
+                font-size: 0.35rem;
+              }
+            }
+          }
+
+          .button {
+            width: 100%;
+            position: relative;
+            .submit-button {
+              width: 100%;
+              height: 100%;
+              padding: 0.9rem 0rem;
+              margin: 0.5rem 0; // to fix
+
+              color: white;
+              background-color: $main;
+              border-radius: 0.5rem;
+              border: none;
+
+              cursor: pointer;
+              outline: none;
+              transition: 0.1s ease-in-out;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: $fonts;
+
+              font-size: 1rem;
+
+              @include media("<=SMdesktop") {
+                font-size: 0.875rem;
+                margin: 0.4rem 0; // to fix
+              }
+
+              @include media("<=tablet") {
+                font-size: 1rem;
+                margin: 0.3rem 0; // to fix
+              }
+
+              @include media("<=605px") {
+                font-size: 0.875rem;
+                margin: 0.15rem 0; // to fix
+              }
+
+              @include media("<=phone") {
+                font-size: 0.75rem;
+                margin: 0; // to fix
+              }
+
+              &:hover {
+                background-color: $main-darker;
+              }
+            }
+            .overlay {
+              background-color: rgba(0, 0, 0, 0.75);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              border-radius: 0.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .spinner {
+                border: 0.25rem solid #f3f3f3; /* Light grey */
+                border-top: 0.25rem solid $secondary; /* Blue */
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                animation: spin 1s linear infinite;
+                @include animation-keyframes {
+                  from {
+                    transform: rotate(0deg);
+                  }
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
