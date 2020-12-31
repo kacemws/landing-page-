@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./Style/App.scss";
 import Signin from "./Views/Signin";
+import Signup from "./Views/Signup";
 function App() {
   return (
     <div className="App">
@@ -10,13 +11,7 @@ function App() {
             <Signin />
           </Route>
           <Route path="/sign-up">
-            <div
-              style={{
-                height: "100%",
-                width: "100%",
-                backgroundColor: "blue",
-              }}
-            ></div>
+            <Signup />
           </Route>
         </Switch>
       </Router>
