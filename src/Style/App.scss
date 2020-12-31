@@ -20,9 +20,10 @@ html {
 
 .App {
   min-height: 100vh;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  background-color: $background;
+  // background-color: $background;
+  background-color: #ffffff;
 
   input {
     box-sizing: border-box;
