@@ -22,6 +22,9 @@ export default function Signin() {
     <div className="sign-in">
       <div className="container">
         <div className="left-part">
+          <div className="header">
+            <img className="logo" src={logo} alt="neo's logo" />
+          </div>
           <div className="content">
             <LandingImage />
           </div>
@@ -29,9 +32,9 @@ export default function Signin() {
         <div className="right-part">
           <div className="right-part-inner">
             {/*Header*/}
-            <header>
+            {/* <header>
               <img className="logo" src={logo} alt="neo's logo" />
-            </header>
+            </header> */}
             {/*Header*/}
 
             {/*Title*/}

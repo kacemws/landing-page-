@@ -14,14 +14,25 @@
       height: 100%;
       width: 65%;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
       background-color: $background;
       @include media("<tablet") {
         display: none;
       }
+      .header {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .logo {
+          padding-left: 2rem;
+          width: 80px;
+        }
+      }
       .content {
-        height: 90%;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
