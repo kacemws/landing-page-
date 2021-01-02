@@ -28,13 +28,23 @@ export default function Signin() {
           <div className="content">
             <LandingImage />
           </div>
+          <div className="greetings legend">
+            <h1
+              style={{
+                textTransform: "uppercase",
+              }}
+            >
+              Gérer votre commerce en un click !
+            </h1>
+            <h3>Installez NEO Et Prenez L'Avantage Sur Vos Concurents</h3>
+          </div>
         </div>
         <div className="right-part">
           <div className="right-part-inner">
             {/*Header*/}
-            {/* <header>
+            <header>
               <img className="logo" src={logo} alt="neo's logo" />
-            </header> */}
+            </header>
             {/*Header*/}
 
             {/*Title*/}

@@ -25,6 +25,9 @@
       .header {
         height: 10%;
         width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
         display: flex;
         align-items: center;
         .logo {
@@ -38,6 +41,13 @@
         justify-content: center;
         align-items: center;
       }
+      .legend {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
     .right-part {
       height: 100%;
@@ -45,6 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: $background-light;
       @include media("<tablet") {
         width: 100%;
       }
@@ -56,6 +67,10 @@
         flex-direction: column;
         justify-content: center;
         .logo {
+          display: none;
+          @include media("<tablet") {
+            display: inline-block;
+          }
           width: 80px;
           margin: 0 auto;
         }
