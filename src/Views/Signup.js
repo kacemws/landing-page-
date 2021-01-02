@@ -26,15 +26,18 @@ export default function Signup() {
     <div className="sign-up">
       <div className="container">
         <div className="left-part">
+          <div className="header">
+            <img className="logo" src={logo} alt="neo's logo" />
+          </div>
           <div className="content">
             <LandingImage />
           </div>
         </div>
         <div className="right-part">
           <div className="right-part-inner">
-            <header>
+            {/* <header>
               <img className="logo" src={logo} alt="neo's logo" />
-            </header>
+            </header> */}
             {/*Header*/}
 
             {/*Form*/}
