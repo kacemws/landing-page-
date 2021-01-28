@@ -15,14 +15,21 @@ function CodeConfirmation() {
             <div className="input">
               <input type="tel" name="verification-code" />
             </div>
-            <div className="re-send">
+            <div className="button">
               <div className="icon">
                 <img src={retry} />
               </div>
               <div className="text">Envoyer de nouveau</div>
             </div>
           </div>
-          <div className="footer"></div>
+          <div className="footer">
+            <div className="button">
+              <div className="text">Continuer la prochaine fois</div>
+            </div>
+            <div className="button primary">
+              <div className="text">Valider</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
