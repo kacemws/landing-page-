@@ -33,7 +33,57 @@
       .content {
         height: 15%;
         width: 100%;
-        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .input {
+          height: 60%;
+          width: 40%;
+          display: flex;
+          align-items: center;
+          input {
+            height: 100%;
+            width: 100%;
+
+            padding: 0.75rem 0.5rem;
+            margin: 0;
+
+            border: 0.5px solid rgba($color: #000000, $alpha: 0.2);
+            border-left: 0.5rem solid $main;
+            border-radius: 0.25rem;
+
+            outline: none;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+
+            background-color: $background;
+
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+          }
+        }
+        .re-send {
+          height: 60%;
+          width: 35%;
+          background-color: $background-light;
+          border-radius: 0.25rem;
+          box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          cursor: pointer;
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .text {
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: $main;
+          }
+        }
       }
       .footer {
         height: 15%;
