@@ -7,7 +7,9 @@ function CodeConfirmation() {
     <div className="code-confirmation">
       <div className="card">
         <div className="container">
-          <div className="header"></div>
+          <div className="header">
+            <img src={phone} />
+          </div>
           <div className="content"></div>
           <div className="footer"></div>
         </div>
