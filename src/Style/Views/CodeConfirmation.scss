@@ -24,31 +24,54 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      @include media("<=phone") {
+        justify-content: center;
+      }
       .button {
         height: 48px;
-        width: 240px;
-        border-radius: 0.25rem;
+        width: 160px;
+        @include media("<=phone") {
+          width: 48px !important;
+        }
+
+        cursor: pointer;
+
+        border-radius: 4px;
         box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.1);
+
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        cursor: pointer;
+        justify-content: center;
+
         background-color: $background-light;
         color: $main;
-        margin-left: 1.6rem;
-        &.primary {
-          background-color: $main;
-          color: $background-light;
-          box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 0.24);
-        }
+
         .icon {
           display: flex;
           align-items: center;
           justify-content: center;
+          margin-right: 1rem;
+          @include media("<=phone") {
+            margin: 0;
+          }
         }
+
         .text {
           font-weight: 500;
           font-size: 0.875rem;
+          @include media("<=phone") {
+            display: none;
+          }
+        }
+
+        &.primary {
+          width: 160px !important;
+          background-color: $main;
+          color: $background-light;
+          box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 0.24);
+          .text {
+            display: inline-block !important;
+          }
         }
       }
       .header {
@@ -69,8 +92,8 @@
         align-items: center;
         justify-content: space-between;
         .input {
-          height: 60%;
-          width: 40%;
+          height: 48px;
+          width: 160px;
           display: flex;
           align-items: center;
           input {
@@ -83,6 +106,10 @@
             border: 0.5px solid rgba($color: #000000, $alpha: 0.2);
             border-left: 0.5rem solid $main;
             border-radius: 0.25rem;
+
+            @include media("<=phone") {
+              border-left: 2px solid $main;
+            }
 
             outline: none;
             box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
@@ -100,10 +127,23 @@
         height: 15%;
         width: 100%;
         // width: 40%;
-        align-self: flex-end;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
+        @include media("<=phone") {
+          flex-direction: row-reverse;
+        }
+
+        .cancel-wrapper {
+          flex: 1;
+          padding-right: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          @include media("<=phone") {
+            padding-right: 0rem;
+          }
+        }
       }
     }
   }
