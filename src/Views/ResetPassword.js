@@ -8,8 +8,13 @@ function ResetPassword() {
       <div className="card">
         <div className="container">
           <div className="content">
+            <h3>Récupérer votre mot de passe </h3>
             <div className="input">
-              <input type="tel" name="verification-code" />
+              <input
+                type="email"
+                name="verification-code"
+                placeholder="belkacem@neo.com"
+              />
             </div>
           </div>
           <div className="footer">
