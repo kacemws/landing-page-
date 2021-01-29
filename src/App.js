@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./Style/App.scss";
 import CodeConfirmation from "./Views/CodeConfirmation";
+import RessetPassword from "./Views/ResetPassword";
 import Signin from "./Views/Signin";
 import Signup from "./Views/Signup";
 function App() {
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/phone-confirmation">
             <CodeConfirmation />
+          </Route>
+          <Route path="/reset-password">
+            <RessetPassword />
           </Route>
         </Switch>
       </Router>
