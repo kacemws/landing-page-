@@ -11,7 +11,7 @@
   .card {
     height: 80%;
     width: 50%;
-    @include media("<=605px") {
+    @include media("<=tablet") {
       width: 75%;
     }
     background-color: $background-light;
@@ -54,10 +54,12 @@
       .header {
         height: 60%;
         width: 100%;
-        background-color: red;
         img {
           height: 100%;
           width: 100%;
+        }
+        @include media("<=phone") {
+          display: none;
         }
       }
       .content {
