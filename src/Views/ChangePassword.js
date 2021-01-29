@@ -4,7 +4,7 @@ import "../Style/Views/ChangePassword.scss";
 
 function ChangePassword() {
   return (
-    <div className="reset-password">
+    <div className="change-password">
       <div className="card">
         <div className="container">
           <div className="content">
