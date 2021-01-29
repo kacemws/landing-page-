@@ -1,19 +1,24 @@
 import React from "react";
 import exit from "../Assets/exit.svg";
-import "../Style/Views/ResetPassword.scss";
+import "../Style/Views/ChangePassword.scss";
 
-function ResetPassword() {
+function ChangePassword() {
   return (
     <div className="reset-password">
       <div className="card">
         <div className="container">
           <div className="content">
-            <h3>Récupérer votre mot de passe </h3>
+            <h3>Changer votre mot de passe !</h3>
             <div className="input">
               <input
-                type="email"
-                name="email-input"
-                placeholder="belkacem@neo.com"
+                type="password"
+                name="password-field"
+                placeholder="My awesome passw0rd !"
+              />
+              <input
+                type="password"
+                name="confirm-password-field"
+                placeholder="My awesome passw0rd !"
               />
             </div>
           </div>
@@ -36,4 +41,4 @@ function ResetPassword() {
   );
 }
 
-export default ResetPassword;
+export default ChangePassword;
