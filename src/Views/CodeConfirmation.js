@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/Views/CodeConfirmation.scss";
-import phone from "../Assets/phone-code.webp";
+import phone from "../Assets/phone-code.jpg";
 import retry from "../Assets/resend.svg";
 import exit from "../Assets/exit.svg";
 
