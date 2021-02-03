@@ -1,0 +1,47 @@
+@import "./variable.scss";
+
+.toast-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  .toast {
+    position: relative;
+    left: -50%;
+    width: 18rem;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background-color: #f1f3f5;
+    box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 0.24);
+
+    animation: 3s linear;
+    bottom: -12rem;
+    transition: 1s ease-out;
+    &.error {
+      background-color: #d0454c;
+    }
+    &.warning {
+      background-color: #d0454c;
+    }
+
+    &.active {
+      bottom: 0;
+    }
+
+    padding: 4px 16px;
+
+    h1,
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 1.25rem;
+    }
+    h3 {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+}
